@@ -29,11 +29,12 @@ class SearchinRotatedSortedArrayTest {
         int result = searchinRotatedSortedArray.search(nums, target);
         assertEquals(1, result);
     }
+
     @Test
     void search4() {
-        int nums[] = new int[]{1}, target = 0;
+        int nums[] = new int[]{5, 1, 2, 3, 4}, target = 1;
         SearchinRotatedSortedArray searchinRotatedSortedArray = new SearchinRotatedSortedArray();
         int result = searchinRotatedSortedArray.search(nums, target);
-        assertEquals(-1, result);
+        assertEquals(1, result);
     }
 }
